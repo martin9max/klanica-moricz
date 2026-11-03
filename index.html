@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="sr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Klanica Móricz Jermenovci | Prerada mesa od 2001.</title>
+  <meta name="description" content="Klanica Móricz iz Jermenovaca. Domaći suhomesnati proizvodi iz srca Banata, pripremljeni sa pažnjom i poštovanjem prema tradiciji od 2001. godine.">
+  <meta property="og:title" content="Klanica Móricz Jermenovci">
+  <meta property="og:description" content="Domaći suhomesnati proizvodi iz srca Banata, od 2001. godine.">
+  <meta property="og:image" content="img/og.jpg">
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ===================== HEADER ===================== -->
+<header class="header" id="top">
+  <div class="container header__inner">
+    <button class="burger" id="burger" aria-label="Meni" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav" id="nav" aria-label="Glavni meni">
+      <div class="nav__group">
+        <a href="#o-nama" data-i18n="nav_about">O nama</a>
+        <a href="#proizvodi" data-i18n="nav_products">Proizvodi</a>
+        <a href="#kako-radimo" data-i18n="nav_process">Kako radimo</a>
+      </div>
+      <a href="#top" class="brand" aria-label="Klanica Móricz, početna">
+        <img src="img/logo.svg" alt="Klanica Móricz" class="brand__logo" width="72" height="72">
+      </a>
+      <div class="nav__group">
+        <a href="#porudzbine" data-i18n="nav_orders">Porudžbine</a>
+        <a href="#kontakt" data-i18n="nav_contact">Kontakt</a>
+        <div class="lang" role="group" aria-label="Jezik / Nyelv">
+          <button type="button" data-lang="sr" class="is-active">SR</button>
+          <button type="button" data-lang="hu">HU</button>
+        </div>
+      </div>
+    </nav>
+
+    <a href="#top" class="brand brand--mobile" aria-label="Klanica Móricz, početna">
+      <img src="img/logo.svg" alt="Klanica Móricz" class="brand__logo" width="56" height="56">
+    </a>
+    <div class="lang lang--mobile" role="group" aria-label="Jezik / Nyelv">
+      <button type="button" data-lang="sr" class="is-active">SR</button>
+      <button type="button" data-lang="hu">HU</button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero">
+  <div class="hero__bg" aria-hidden="true"></div>
+  <div class="container hero__inner">
+    <p class="hero__eyebrow" data-i18n="hero_eyebrow">Od 2001. godine</p>
+    <h1 data-i18n="hero_title">Klanica Móricz<span>Jermenovci</span></h1>
+    <p class="hero__lead" data-i18n="hero_lead">Domaći suhomesnati proizvodi iz srca Banata, pripremljeni sa pažnjom i poštovanjem prema tradiciji.</p>
+    <a href="#proizvodi" class="btn btn--light" data-i18n="hero_btn">Pogledajte proizvode</a>
+  </div>
+
+  <!-- Silueta banatske ravnice: đeram, crkva, drveće -->
+  <svg class="hero__horizon" viewBox="0 0 1440 140" preserveAspectRatio="none" aria-hidden="true">
+    <g fill="currentColor">
+      <ellipse cx="150" cy="86" rx="9" ry="20"/><rect x="149" y="100" width="2" height="12"/>
+      <ellipse cx="172" cy="92" rx="7" ry="15"/><rect x="171" y="102" width="2" height="10"/>
+      <rect x="355" y="52" width="3" height="58"/>
+      <path d="M300 44 L420 82 L419 85 L299 47 Z"/>
+      <rect x="301" y="46" width="1.6" height="40"/>
+      <rect x="296" y="86" width="12" height="8" rx="1"/>
+      <rect x="1000" y="74" width="54" height="36"/>
+      <rect x="1040" y="48" width="16" height="62"/>
+      <path d="M1038 50 L1048 18 L1058 50 Z"/>
+      <rect x="1047" y="8" width="2" height="12"/><rect x="1043" y="12" width="10" height="2"/>
+      <path d="M996 76 L1027 58 L1058 76 Z"/>
+      <ellipse cx="1210" cy="88" rx="10" ry="22"/><rect x="1209" y="104" width="2" height="10"/>
+      <ellipse cx="1236" cy="94" rx="7" ry="15"/><rect x="1235" y="104" width="2" height="8"/>
+      <path d="M0 140 L0 112 C 240 100 480 116 720 108 C 960 100 1200 116 1440 104 L1440 140 Z"/>
+    </g>
+  </svg>
+</section>
+
+<!-- ===================== INTRO ===================== -->
+<section class="section intro">
+  <div class="container narrow center">
+    <p class="eyebrow" data-i18n="intro_eyebrow">Prerada mesa Móricz</p>
+    <h2 data-i18n="intro_title">Ukus koji se ne žuri</h2>
+    <div class="ornament" aria-hidden="true"><span></span></div>
+    <p class="intro__text" data-i18n="intro_p">Već dvadeset pet godina u Jermenovcima pravimo suhomesnate proizvode onako kako se u Banatu oduvek pravilo: polako, pažljivo i bez kompromisa po pitanju kvaliteta. Klanica i prerada nalaze se na istom mestu, pa meso od prvog do poslednjeg koraka ostaje u našim rukama.</p>
+  </div>
+
+  <div class="container values">
+    <div class="value">
+      <span class="value__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2l2.6 5.6 6.1.7-4.5 4.2 1.2 6L12 15.6 6.6 18.5l1.2-6L3.3 8.3l6.1-.7z"/></svg></span>
+      <h3 data-i18n="v1_t">Kvalitet</h3>
+      <p data-i18n="v1_p">Svaki komad mesa prolazi kroz naše ruke pre nego što stigne na Vašu trpezu.</p>
+    </div>
+    <div class="value">
+      <span class="value__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 21V10l8-6 8 6v11h-5v-6H9v6z"/></svg></span>
+      <h3 data-i18n="v2_t">Tradicija</h3>
+      <p data-i18n="v2_p">Isti način rada i isti ukus, bez promena od 2001. godine.</p>
+    </div>
+    <div class="value">
+      <span class="value__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-9.3-9.2C1.4 8.4 3.6 5 7 5c2 0 3.3 1 5 2.8C13.7 6 15 5 17 5c3.4 0 5.6 3.4 4.3 6.8C19.5 16.4 12 21 12 21z"/></svg></span>
+      <h3 data-i18n="v3_t">Poverenje</h3>
+      <p data-i18n="v3_p">Dvadeset pet godina saradnje sa kupcima kojima smo zahvalni na vernosti.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ABOUT ===================== -->
+<section class="section about" id="o-nama">
+  <div class="container about__grid">
+    <figure class="photo photo--tall">
+      <img src="img/radnja.jpg" alt="Dimljena šunka, pečenica i kolenice u našoj pušnici" loading="lazy">
+      <figcaption data-i18n="about_cap">Iz naše pušnice. Sve što vidite nastalo je u Jermenovcima.</figcaption>
+    </figure>
+
+    <div class="about__copy">
+      <p class="eyebrow" data-i18n="about_eyebrow">O nama</p>
+      <h2 data-i18n="about_title">Zanat koji čuvamo od 2001. godine</h2>
+      <p data-i18n="about_p1">Klanica Móricz osnovana je 2001. godine u Jermenovcima, banatskom selu u kojem je prerada mesa oduvek bila zanat, a ne industrija. Od prvog dana verujemo u jednostavno pravilo: dobar proizvod nastaje od dobrog mesa, strpljenja i iskustva.</p>
+      <p data-i18n="about_p2">Upravo zato klanje i preradu obavljamo na jednom mestu. Meso ne putuje i ne menja ruke, a mi u svakom trenutku znamo njegovo poreklo i put koji je prešlo do gotovog proizvoda. Tu sigurnost s ponosom prenosimo i na naše kupce.</p>
+
+      <dl class="stats">
+        <div><dt>25</dt><dd data-i18n="stat1">godina rada</dd></div>
+        <div><dt>2001.</dt><dd data-i18n="stat2">godina osnivanja</dd></div>
+        <div><dt>SR · HU</dt><dd data-i18n="stat3">srpski i mađarski</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PRODUCTS ===================== -->
+<!-- NAPOMENA: spisak proizvoda proveriti sa vlasnikom i dopuniti ili izbaciti po potrebi -->
+<section class="section products" id="proizvodi">
+  <div class="container">
+    <div class="section__head">
+      <p class="eyebrow" data-i18n="prod_eyebrow">Ponuda</p>
+      <h2 data-i18n="prod_title">Naši proizvodi</h2>
+      <div class="ornament" aria-hidden="true"><span></span></div>
+      <p data-i18n="prod_lead">Ponuda prati godišnja doba. Za aktuelnu ponudu i cene pozovite nas ili pošaljite upit.</p>
+    </div>
+
+    <div class="cards">
+      <article class="card">
+        <div class="card__img"><img src="img/kobasica.jpg" alt="" loading="lazy"></div>
+        <div class="card__body">
+          <h3 data-i18n="p1_t">Domaća kobasica</h3>
+          <p class="card__alt" data-i18n="p1_a">Házi kolbász</p>
+          <p data-i18n="p1_p">Sveža za roštilj ili suva za hladnu zakusku, u blagoj i ljutoj varijanti, začinjena domaćom alevom paprikom.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__img"><img src="img/slanina.jpg" alt="" loading="lazy"></div>
+        <div class="card__body">
+          <h3 data-i18n="p2_t">Slanina</h3>
+          <p class="card__alt" data-i18n="p2_a">Szalonna</p>
+          <p data-i18n="p2_p">Dimljena i mesnata, nezaobilazna na doručku, u pasulju ili uz komad domaćeg hleba.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__img"><img src="img/sunka.jpg" alt="" loading="lazy"></div>
+        <div class="card__body">
+          <h3 data-i18n="p3_t">Šunka i pečenica</h3>
+          <p class="card__alt" data-i18n="p3_a">Sonka és karaj</p>
+          <p data-i18n="p3_p">Polako dimljene i sušene, sočne i aromatične. Pravi izbor za svečanu trpezu.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__img"><img src="img/svargla.jpg" alt="" loading="lazy"></div>
+        <div class="card__body">
+          <h3 data-i18n="p4_t">Švargla</h3>
+          <p class="card__alt" data-i18n="p4_a">Disznósajt</p>
+          <p data-i18n="p4_p">Banatski specijalitet pripremljen po starinskom receptu, za ljubitelje autentičnih ukusa.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__img"><img src="img/krvavice.jpg" alt="" loading="lazy"></div>
+        <div class="card__body">
+          <span class="tag" data-i18n="tag_season">Sezonski</span>
+          <h3 data-i18n="p5_t">Krvavice i džigernjače</h3>
+          <p class="card__alt" data-i18n="p5_a">Hurka</p>
+          <p data-i18n="p5_p">Zimska klasika iz vremena svinjokolja, pripremljena sa pirinčem i pažljivo odabranim začinima.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__img"><img src="img/cvarci.jpg" alt="" loading="lazy"></div>
+        <div class="card__body">
+          <h3 data-i18n="p6_t">Čvarci i mast</h3>
+          <p class="card__alt" data-i18n="p6_a">Tepertő és zsír</p>
+          <p data-i18n="p6_p">Hrskavi čvarci i čista domaća mast, osnova banatske kuhinje i domaćih pogačica.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PROCESS ===================== -->
+<section class="section process" id="kako-radimo">
+  <div class="process__bg" aria-hidden="true"></div>
+  <div class="container process__inner">
+    <div class="section__head section__head--light">
+      <p class="eyebrow" data-i18n="proc_eyebrow">Kako radimo</p>
+      <h2 data-i18n="proc_title">Od klanice do Vaše trpeze</h2>
+      <div class="ornament" aria-hidden="true"><span></span></div>
+      <p data-i18n="proc_lead">Svaki korak obavljamo sami, na jednom mestu i bez prečica.</p>
+    </div>
+
+    <ol class="steps">
+      <li class="step">
+        <span class="step__num">I</span>
+        <h3 data-i18n="s1_t">Sopstvena klanica</h3>
+        <p data-i18n="s1_p">Klanje obavljamo sami, u Jermenovcima, pa tačno znamo poreklo svakog komada mesa.</p>
+      </li>
+      <li class="step">
+        <span class="step__num">II</span>
+        <h3 data-i18n="s2_t">Prerada</h3>
+        <p data-i18n="s2_p">Meso sečemo, meljemo i začinjavamo odmah, dok je potpuno sveže.</p>
+      </li>
+      <li class="step">
+        <span class="step__num">III</span>
+        <h3 data-i18n="s3_t">Dimljenje</h3>
+        <p data-i18n="s3_p">Proizvode dimimo polako i na tradicionalan način, kako se u Banatu oduvek radilo.</p>
+      </li>
+      <li class="step">
+        <span class="step__num">IV</span>
+        <h3 data-i18n="s4_t">Zrenje</h3>
+        <p data-i18n="s4_p">Suhomesnati proizvodi zru onoliko dugo koliko je potrebno. Na Vašu trpezu stižu tek kada su zaista spremni.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ===================== GALLERY / RADIONICA ===================== -->
+<section class="section gallery">
+  <div class="container">
+    <div class="section__head">
+      <p class="eyebrow" data-i18n="gal_eyebrow">Iz naše radionice</p>
+      <h2 data-i18n="gal_title">Pogled iza zavese</h2>
+      <div class="ornament" aria-hidden="true"><span></span></div>
+      <p data-i18n="gal_lead">Kobasice, viršle, dimljeno meso i plate za proslave. Sve nastaje ovde, u Jermenovcima, pod našim nadzorom od prvog do poslednjeg koraka.</p>
+    </div>
+
+    <div class="mosaic">
+      <figure class="photo mosaic__a"><img src="img/galerija-1.jpg" alt="Domaće kobasice u pušnici" loading="lazy"></figure>
+      <figure class="photo mosaic__b"><img src="img/galerija-2.jpg" alt="Plate sa suhomesnatim za proslavu" loading="lazy"></figure>
+      <figure class="photo mosaic__c"><img src="img/galerija-3.jpg" alt="Viršle u pušnici" loading="lazy"></figure>
+      <figure class="photo mosaic__e"><img src="img/galerija-5.jpg" alt="Dimljena šunka, pečenica i kolenice" loading="lazy"></figure>
+      <figure class="photo mosaic__f"><img src="img/galerija-6.jpg" alt="Kobasice na kolicima u radionici" loading="lazy"></figure>
+      <figure class="photo mosaic__g"><img src="img/galerija-7.jpg" alt="Domaća slanina" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ORDERS ===================== -->
+<section class="section orders" id="porudzbine">
+  <div class="container orders__grid">
+    <div>
+      <p class="eyebrow" data-i18n="ord_eyebrow">Porudžbine</p>
+      <h2 data-i18n="ord_title">Za slavu, praznike i svako okupljanje</h2>
+      <p data-i18n="ord_lead">Javite nam se nekoliko dana unapred i pripremićemo porudžbinu po Vašoj meri, od jednog venca kobasica do bogatog paketa za celu porodicu.</p>
+      <ul class="checks">
+        <li data-i18n="ord_l1">Praznični paketi suhomesnatih proizvoda</li>
+        <li data-i18n="ord_l2">Veće količine za firme, ustanove i prodavnice</li>
+        <li data-i18n="ord_l3">Porudžbine telefonom ili elektronskom poštom</li>
+        <li data-i18n="ord_l4">Preuzimanje u Jermenovcima</li>
+      </ul>
+    </div>
+
+    <form class="order-form" id="orderForm" novalidate>
+      <h3 data-i18n="form_title">Pošaljite upit</h3>
+      <label>
+        <span data-i18n="form_name">Ime i prezime</span>
+        <input type="text" name="ime" required autocomplete="name">
+      </label>
+      <label>
+        <span data-i18n="form_phone">Telefon</span>
+        <input type="tel" name="telefon" required autocomplete="tel">
+      </label>
+      <label>
+        <span data-i18n="form_msg">Šta Vam je potrebno i za kada?</span>
+        <textarea name="poruka" rows="4" required data-i18n-ph="form_ph" placeholder="Na primer: 3 kg suve kobasice i 2 kg slanine za subotu"></textarea>
+      </label>
+      <button type="submit" class="btn btn--red btn--block" data-i18n="form_send">Pošaljite upit</button>
+      <p class="form-note" data-i18n="form_note">Javićemo Vam se u najkraćem roku radi potvrde porudžbine.</p>
+      <p class="form-status" id="formStatus" role="status"></p>
+    </form>
+  </div>
+</section>
+
+<!-- ===================== CONTACT ===================== -->
+<!-- Podaci iz APR-a (preko CompanyWall-a) -->
+<section class="section contact" id="kontakt">
+  <div class="container contact__grid">
+    <div class="contact__info">
+      <p class="eyebrow" data-i18n="con_eyebrow">Kontakt</p>
+      <h2 data-i18n="con_title">Posetite nas</h2>
+
+      <ul class="info-list">
+        <li>
+          <span class="info-list__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg></span>
+          <div>
+            <strong data-i18n="con_addr">Adresa</strong>
+            <span>Ekonomsko dvorište bb<br>26363 Jermenovci</span>
+          </div>
+        </li>
+        <li>
+          <span class="info-list__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.250.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg></span>
+          <div>
+            <strong data-i18n="con_phone">Telefon</strong>
+            <a href="tel:+38162292900">062 292 900</a><br>
+            <a href="tel:+38113866079">013 866 079</a>
+          </div>
+        </li>
+        <li>
+          <span class="info-list__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm9 7.2L4.5 7v.1L12 12.3l7.5-5.2V7z"/></svg></span>
+          <div>
+            <strong data-i18n="con_mail">E-mail</strong>
+            <a href="mailto:klanicamoricz@gmail.com">klanicamoricz@gmail.com</a>
+          </div>
+        </li>
+        <li>
+          <span class="info-list__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 3.3.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 3.2-1.7 4.8-4.9 4.9-1.3.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-3.3-.1-4.8-1.7-4.9-4.9C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8C2.4 3.9 3.900 2.4 7.2 2.3 8.4 2.2 8.8 2.2 12 2.2zM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zM17.3 5.5a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4z"/></svg></span>
+          <div>
+            <strong data-i18n="con_social">Pratite nas</strong>
+            <span class="socials">
+              <a href="https://www.facebook.com/klanica.moricz/" target="_blank" rel="noopener">Facebook</a>
+              <a href="https://www.instagram.com/klanica_moricz/" target="_blank" rel="noopener">Instagram</a>
+            </span>
+          </div>
+        </li>
+      </ul>
+
+      <a href="tel:+38162292900" class="btn btn--red contact__cta" data-i18n="con_cta">Kontaktirajte nas</a>
+    </div>
+
+    <div class="map">
+      <iframe title="Mapa, Jermenovci" src="https://www.google.com/maps?q=Jermenovci,+Srbija&z=14&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <img src="img/logo.svg" alt="" class="footer__logo" width="64" height="64">
+    <p class="footer__motto" data-i18n="footer_motto">Kvalitet · Tradicija · Poverenje</p>
+    <p class="footer__copy">© <span id="year"></span> Klanica Móricz, Jermenovci</p>
+  </div>
+</footer>
+
+<!-- Plutajuće dugme za poziv na telefonu -->
+<a href="tel:+38162292900" class="fab" aria-label="Pozovite nas">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>

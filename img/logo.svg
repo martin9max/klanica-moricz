@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Privremeni znak po uzoru na logo (potkovica). Zameniti originalnim logom. -->
+  <circle cx="50" cy="50" r="49" fill="#fff"/>
+  <path d="M27 86 C10 70 10 38 26 22 C38 10 62 10 74 22 C90 38 90 70 73 86 L62 86 C76 70 76 42 66 31 C58 23 42 23 34 31 C24 42 24 70 38 86 Z" fill="#a3201f"/>
+  <g fill="#fff">
+    <circle cx="20" cy="56" r="2.2"/><circle cx="22" cy="40" r="2.2"/><circle cx="31" cy="25" r="2.2"/>
+    <circle cx="80" cy="56" r="2.2"/><circle cx="78" cy="40" r="2.2"/><circle cx="69" cy="25" r="2.2"/>
+  </g>
+  <path d="M42 46 L50 39 L58 46 Z" fill="#a3201f"/>
+  <rect x="44" y="46" width="12" height="8" fill="#2e6b3a"/>
+  <text x="50" y="68" text-anchor="middle" font-family="Georgia, serif" font-weight="700" font-size="15" fill="#a3201f">Móricz</text>
+  <rect x="35" y="72" width="30" height="2" fill="#2e6b3a"/>
+</svg>
